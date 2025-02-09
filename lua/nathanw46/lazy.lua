@@ -12,7 +12,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
-
 local plugins = 
 {
 	{ "folke/tokyonight.nvim", name = "tokyonight", lazy = false, priority = 1000},
@@ -22,9 +21,7 @@ local plugins =
 	{ 'ThePrimeagen/harpoon', dependencies = { 'nvim-lua/plenary.nvim' }},
 	{ 'tpope/vim-fugitive' },
 }
-
 local opts = {}
-
 
 require("lazy").setup(plugins, opts)
 
