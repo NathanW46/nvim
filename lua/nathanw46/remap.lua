@@ -1,4 +1,4 @@
-vim.g.mapleader= " "
+vim.g.mapleader = " " 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 
@@ -17,7 +17,8 @@ end
 
 vim.api.nvim_set_keymap('i', '<C-v>', [[<Cmd>lua sync_paste()<CR><C-R>+]], { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-v>', [[<Cmd>lua sync_paste()<CR>"+p]], { noremap = true, silent = true})
-vim.api.nvim_set_keymap('v', '<C-c>', [["+y<Cmd>lua sync_copy()<CR>]], { noremap = true, silent = true})
+vim.api.nvim_set_keymap('v', '<leader>y', [["+y<Cmd>lua sync_copy()<CR>]], { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>Y', [["+Y<Cmd>lua sync_copy()<CR>]], { noremap = true, silent = true})
 
 vim.g.clipboard = {
 	name = "xsel",
@@ -32,3 +33,28 @@ vim.g.clipboard = {
 	cache_enabled = 0,
 }
 --clipboard----------------------------------------------------------------------------------------------------
+
+
+--ThePrimeagen's remaps
+
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+
+vim.keymap.set("x", "<leader>p", "\"_dP")
+
+--delete to void register
+vim.keymap.set("n", "<leader>d", "\"_d")
+vim.keymap.set("v", "<leader>d", "\"_d")
+
+vim.keymap.set("n", "Q", "<nop>")
+
+vim.keymap.set("n", "<leader>s", ":%s/\\<<C-R><C-w>\\>/<C-R><C-w>/gI<Left><Left>")
+vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", {silent = true})
+
