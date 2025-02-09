@@ -6,3 +6,5 @@ vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
 
 vim.keymap.set("n", "<C-b>", function() ui.nav_prev() end)
 vim.keymap.set("n", "<C-n>", function() ui.nav_next() end)
+
+print("harpoon")
