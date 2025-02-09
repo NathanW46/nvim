@@ -1,5 +1,6 @@
-require("nathanw46") 
-
+require("config.keymaps")
+require("config.options")
+require("config.lazy").setup("plugins")
 
 
 

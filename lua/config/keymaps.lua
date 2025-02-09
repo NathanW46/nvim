@@ -16,7 +16,7 @@ _G.sync_copy = function()
 end 
 
 vim.api.nvim_set_keymap('i', '<C-v>', [[<Cmd>lua sync_paste()<CR><C-R>+]], { noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<C-v>', [[<Cmd>lua sync_paste()<CR>"+p]], { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<C-v>', [[<Cmd>lua sync_paste()<CR>"+P]], { noremap = true, silent = true})
 vim.api.nvim_set_keymap('v', '<leader>y', [["+y<Cmd>lua sync_copy()<CR>]], { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>Y', [["+Y<Cmd>lua sync_copy()<CR>]], { noremap = true, silent = true})
 
