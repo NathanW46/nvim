@@ -57,3 +57,13 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-R><C-w>\\>/<C-R><C-w>/gI<Left><Left>")
 vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", {silent = true})
 
+
+--tmux navigation
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
+
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.wo.number = true
+
