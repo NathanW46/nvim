@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-doc-name, undefined-field
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
 if true then return {} end
@@ -121,19 +122,12 @@ return {
     opts = {
       ensure_installed = {
         "bash",
-        "html",
-        "javascript",
-        "json",
+        "fish",
         "lua",
-        "markdown",
-        "markdown_inline",
         "python",
-        "query",
         "regex",
-        "tsx",
-        "typescript",
+        "clangd",
         "vim",
-        "yaml",
       },
     },
   },
