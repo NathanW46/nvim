@@ -1,7 +1,36 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
-vim.opt.wrap = false
-vim.opt.scrolloff = 8
-vim.opt.isfname:append("@-@")
+local opt = vim.opt
+
+opt.number = true
+opt.relativenumber = true
+opt.signcolumn = "yes"
+opt.cursorline = true
+
+opt.expandtab = true
+opt.shiftwidth = 2
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.smartindent = true
+
+opt.ignorecase = true
+opt.smartcase = true
+opt.incsearch = true
+opt.hlsearch = true
+
+opt.splitright = true
+opt.splitbelow = true
+
+opt.termguicolors = true
+opt.scrolloff = 8
+opt.wrap = false
+opt.mouse = "a"
+opt.clipboard = "unnamedplus"
+
+opt.undofile = true
+opt.swapfile = false
+opt.backup = false
+
+opt.updatetime = 250
+opt.timeoutlen = 300
