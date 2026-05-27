@@ -13,6 +13,7 @@ return {
         { "<leader>s", group = "search" },
         { "<leader>b", group = "buffer" },
         { "<leader>u", group = "ui" },
+        { "<leader>m", group = "markdown" },
         { "<leader><tab>", group = "tabs" },
         { "<leader>g", group = "git" },
         { "[", group = "prev" },

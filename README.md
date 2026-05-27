@@ -8,6 +8,9 @@ Config files as of 5/27/26
 - lua/config/ - options, keymaps, lazy bootstrap
 - lua/plugins/
 
+## Lite mode
+Turn of heavy plugins like LSP and plugins with external libraries with `:LiteToggle` in nvim
+
 ## Included Packages
 
 ### Plugin Manager
@@ -43,6 +46,22 @@ Config files as of 5/27/26
 ### Treesitter
 - nvim-treesitter/nvim-treesitter
 
+## External Dependencies
+
+- glow (markdown renderer, used by lua/config/markdown-preview.lua)
+
+## Custom Keymaps
+
+- TODO
+
+## Special Features
+
+### Markdown renderer
+
+- <leader>mp - toggle markdown preview pane (runs glow on the current file)
+- <leader>mr - manually refresh the markdown preview
+
+
 --- 
 
 ## TODO
@@ -56,3 +75,4 @@ Config files as of 5/27/26
 - [ ] Surround
 - [ ] Autopairs
 - [ ] DAP (debugging)
+- [ ] add keymaps here
