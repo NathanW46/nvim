@@ -8,7 +8,6 @@ return {
       -- bufdelete = { enabled = true },
       bigfile = { enabled = true },
       dashboard = { enabled = true },
-      explorer = { enabled = true },
       image = { enabled = true },
       input = { enabled = true },
       indent = { enabled = true },
@@ -16,16 +15,28 @@ return {
       notifier = { enabled = true, timeout = 3000 },
       picker = { enabled = true },
       quickfile = { enabled = true },
-      scroll = { enabled = true },
       scope = { enabled = true },
       statuscolumn = { enabled = true },
       toggle = { enabled = true },
       words = { enabled = true },
       terminal = { enabled = true},
+      scroll = {
+        enabled = true,
+        -- Default scrolling animation
+        animate = {
+          duration = { step = 8, total = 80 }, 
+          easing = "linear",
+        },
+        animate_repeat = {
+          delay = 50, 
+          duration = { step = 3, total = 20 },
+          easing = "linear",
+        },
+      },
       styles = {
         notification = {
           -- wo = { wrap = true } -- Wrap notifications
-        }
+        },
       }
     },
     keys = {
@@ -50,7 +61,7 @@ return {
       { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss notifications" },
 
       -- Explorer
-      { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
+      -- { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
 
 
       -- Search

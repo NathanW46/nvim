@@ -34,3 +34,10 @@ opt.backup = false
 
 opt.updatetime = 250
 opt.timeoutlen = 300
+
+opt.cmdheight = 0
+
+opt.wildoptions = "pum,tagfile,fuzzy"
+opt.pumheight = 10
+opt.pumblend = 0
+
